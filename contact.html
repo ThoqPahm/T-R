@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ ModHub | Hỗ trợ & yêu cầu mod</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">ModHub<span>.</span></a>
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Mở menu</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="catalog.html">Kho ứng dụng</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="contact.html" class="active">Liên hệ</a></li>
+          <li><a href="privacy.html">Chính sách</a></li>
+        </ul>
+      </nav>
+      <a class="cta-button" href="catalog.html">Khám phá ứng dụng</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="simple-hero">
+      <div class="container">
+        <span class="eyebrow">Liên hệ</span>
+        <h1>Đội ngũ ModHub luôn sẵn sàng hỗ trợ bạn 24/7</h1>
+        <p>Liên hệ với chúng tôi để yêu cầu mod, báo lỗi ứng dụng, hợp tác truyền thông hoặc hỗ trợ kỹ thuật.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Hỗ trợ nhanh</h3>
+          <p>Inbox qua Telegram để được hỗ trợ cài đặt và xử lý lỗi trong vòng 15 phút.</p>
+          <a class="button" href="https://t.me/modhub_support" target="_blank" rel="noopener">Mở Telegram</a>
+        </div>
+        <div class="contact-card">
+          <h3>Yêu cầu mod riêng</h3>
+          <p>Cung cấp tên ứng dụng, phiên bản và tính năng bạn mong muốn. Đội ngũ modder sẽ phản hồi trong 24h.</p>
+          <a class="button" href="mailto:request@modhub.vn">Gửi email</a>
+        </div>
+        <div class="contact-card">
+          <h3>Hợp tác truyền thông</h3>
+          <p>Chúng tôi hợp tác quảng bá với creator & agency. Nhận media kit và báo giá nhanh chóng.</p>
+          <a class="button" href="mailto:partnership@modhub.vn">Liên hệ ngay</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <h2>Gửi tin nhắn cho ModHub</h2>
+        <p>Điền biểu mẫu để chúng tôi hỗ trợ bạn chi tiết nhất. Mọi thông tin đều được bảo mật.</p>
+        <label for="fullname">Họ và tên</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Nguyễn Văn A" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="email@domain.com" required>
+
+        <label for="topic">Chủ đề</label>
+        <select id="topic" name="topic" required>
+          <option value="">-- Chọn chủ đề --</option>
+          <option value="support">Hỗ trợ kỹ thuật</option>
+          <option value="request">Yêu cầu mod mới</option>
+          <option value="report">Báo lỗi link tải</option>
+          <option value="business">Hợp tác</option>
+        </select>
+
+        <label for="message">Nội dung</label>
+        <textarea id="message" name="message" placeholder="Mô tả chi tiết vấn đề hoặc yêu cầu của bạn" required></textarea>
+
+        <div class="checkbox">
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">Tôi đồng ý với <a class="link" href="privacy.html">Chính sách bảo mật</a>.</label>
+        </div>
+
+        <button class="button" type="submit">Gửi tin nhắn</button>
+        <div class="form-success" id="form-success" hidden>🎉 Cảm ơn bạn! Chúng tôi sẽ phản hồi qua email trong vòng 24 giờ.</div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html">ModHub<span>.</span></a>
+        <p>Kho ứng dụng APK MOD an toàn và sáng tạo dành cho cộng đồng đam mê công nghệ.</p>
+        <div class="socials" aria-label="Mạng xã hội">
+          <a href="#" aria-label="Theo dõi chúng tôi trên Facebook"></a>
+          <a href="#" aria-label="Theo dõi chúng tôi trên Telegram"></a>
+          <a href="#" aria-label="Theo dõi chúng tôi trên YouTube"></a>
+        </div>
+      </div>
+      <div>
+        <h3>Điều hướng</h3>
+        <ul>
+          <li><a href="catalog.html">Kho ứng dụng</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="privacy.html">Chính sách & Điều khoản</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tin tức</h3>
+        <p>Nhận bản tin ModHub mỗi tuần với những ứng dụng và mẹo sử dụng mới nhất.</p>
+        <form class="footer-form">
+          <label for="footer-email" class="sr-only">Email của bạn</label>
+          <input type="email" id="footer-email" placeholder="Email của bạn">
+          <button type="submit">Đăng ký</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> ModHub. Giữ mọi quyền.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/appsData.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>
