@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kho ứng dụng MOD | ModHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">ModHub<span>.</span></a>
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Mở menu</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="catalog.html" class="active">Kho ứng dụng</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="privacy.html">Chính sách</a></li>
+        </ul>
+      </nav>
+      <a class="cta-button" href="contact.html">Yêu cầu mod</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="simple-hero">
+      <div class="container">
+        <span class="eyebrow">Kho ứng dụng</span>
+        <h1>Tải xuống ứng dụng & trò chơi MOD yêu thích của bạn</h1>
+        <p>Toàn bộ ứng dụng được kiểm duyệt kỹ lưỡng, cập nhật liên tục và có hướng dẫn cài đặt chi tiết.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container filter-bar">
+        <form id="filter-form">
+          <label for="search" class="sr-only">Tìm kiếm</label>
+          <input type="search" id="search" name="q" placeholder="Tìm kiếm theo tên, tag, mô tả...">
+          <label for="category" class="sr-only">Thể loại</label>
+          <select id="category" name="category">
+            <option value="all">Tất cả thể loại</option>
+          </select>
+          <button class="button" type="submit">Lọc kết quả</button>
+        </form>
+        <div class="filter-stats" aria-live="polite">
+          <span id="result-count">0</span> ứng dụng phù hợp
+        </div>
+      </div>
+
+      <div class="container catalog-grid" id="catalog-grid" aria-live="polite"></div>
+      <div class="container" id="catalog-empty" hidden>
+        <div class="empty-state">
+          <h3>Không tìm thấy ứng dụng phù hợp</h3>
+          <p>Thử thay đổi từ khóa hoặc chọn thể loại khác. Bạn cũng có thể <a class="link" href="contact.html">gửi yêu cầu mod</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html">ModHub<span>.</span></a>
+        <p>Kho ứng dụng APK MOD an toàn và sáng tạo dành cho cộng đồng đam mê công nghệ.</p>
+        <div class="socials" aria-label="Mạng xã hội">
+          <a href="#" aria-label="Theo dõi chúng tôi trên Facebook"></a>
+          <a href="#" aria-label="Theo dõi chúng tôi trên Telegram"></a>
+          <a href="#" aria-label="Theo dõi chúng tôi trên YouTube"></a>
+        </div>
+      </div>
+      <div>
+        <h3>Điều hướng</h3>
+        <ul>
+          <li><a href="catalog.html">Kho ứng dụng</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="privacy.html">Chính sách & Điều khoản</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tin tức</h3>
+        <p>Nhận bản tin ModHub mỗi tuần với những ứng dụng và mẹo sử dụng mới nhất.</p>
+        <form class="footer-form">
+          <label for="footer-email" class="sr-only">Email của bạn</label>
+          <input type="email" id="footer-email" placeholder="Email của bạn">
+          <button type="submit">Đăng ký</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> ModHub. Giữ mọi quyền.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/appsData.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết ứng dụng | ModHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">ModHub<span>.</span></a>
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Mở menu</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="catalog.html">Kho ứng dụng</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="privacy.html">Chính sách</a></li>
+        </ul>
+      </nav>
+      <a class="cta-button" href="catalog.html">Quay lại kho</a>
+    </div>
+  </header>
+
+  <main id="app-main" hidden>
+    <section class="app-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Đường dẫn">
+          <a href="index.html" class="link">Trang chủ</a>
+          <span aria-hidden="true">›</span>
+          <a href="catalog.html" class="link">Kho ứng dụng</a>
+          <span aria-hidden="true">›</span>
+          <span id="breadcrumb-name"></span>
+        </nav>
+        <h1 id="app-name"></h1>
+        <p id="app-description"></p>
+        <div class="app-meta" id="app-meta"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container detail-layout">
+        <article class="article-card">
+          <section>
+            <h2>Tính năng nổi bật</h2>
+            <ul class="feature-list" id="feature-list"></ul>
+          </section>
+
+          <section>
+            <h2>Hướng dẫn cài đặt</h2>
+            <ol class="install-steps" id="install-steps"></ol>
+          </section>
+
+          <section>
+            <h2>Screenshots</h2>
+            <div class="screenshot-grid" id="screenshot-grid"></div>
+          </section>
+
+          <section>
+            <h2>Nhật ký cập nhật</h2>
+            <div id="changelog"></div>
+          </section>
+        </article>
+
+        <aside class="sidebar-card">
+          <h2>Tải xuống nhanh</h2>
+          <ul class="download-list" id="download-list"></ul>
+
+          <div class="sidebar-card" id="app-info">
+            <h3>Thông tin</h3>
+            <ul class="feature-list" id="info-list"></ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h2>Ứng dụng liên quan</h2>
+            <div class="related-list" id="related-list"></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div class="container" id="app-empty">
+    <section class="empty-state" style="margin: 5rem auto;">
+      <h2>Không tìm thấy ứng dụng</h2>
+      <p>Ứng dụng bạn tìm có thể đã bị gỡ hoặc đường dẫn không chính xác. Quay lại <a class="link" href="catalog.html">Kho ứng dụng</a>.</p>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html">ModHub<span>.</span></a>
+        <p>Kho ứng dụng APK MOD an toàn và sáng tạo dành cho cộng đồng đam mê công nghệ.</p>
+        <div class="socials" aria-label="Mạng xã hội">
+          <a href="#" aria-label="Theo dõi chúng tôi trên Facebook"></a>
+          <a href="#" aria-label="Theo dõi chúng tôi trên Telegram"></a>
+          <a href="#" aria-label="Theo dõi chúng tôi trên YouTube"></a>
+        </div>
+      </div>
+      <div>
+        <h3>Điều hướng</h3>
+        <ul>
+          <li><a href="catalog.html">Kho ứng dụng</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="privacy.html">Chính sách & Điều khoản</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tin tức</h3>
+        <p>Nhận bản tin ModHub mỗi tuần với những ứng dụng và mẹo sử dụng mới nhất.</p>
+        <form class="footer-form">
+          <label for="footer-email" class="sr-only">Email của bạn</label>
+          <input type="email" id="footer-email" placeholder="Email của bạn">
+          <button type="submit">Đăng ký</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> ModHub. Giữ mọi quyền.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/appsData.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/appDetail.js"></script>
+</body>
+</html>
